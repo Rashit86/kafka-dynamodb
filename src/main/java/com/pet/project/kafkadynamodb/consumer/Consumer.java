@@ -18,7 +18,6 @@ public class Consumer {
     private final CarInfoRepository carInfoRepository;
     private final UserExceptionInfoRepository userExceptionInfoRepository;
 
-
     @KafkaListener(topics = "${kafka-dynamodb-app.topic-name.rented-cars}")
     public void saveCars(String content) throws JsonProcessingException {
         CarInfo carInfo = objectMapper.readValue(content, CarInfo.class);
