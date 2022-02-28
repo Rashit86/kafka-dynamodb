@@ -6,8 +6,8 @@ amazon:
     endpoint: http://localhost:8000/
     region: eu-north-1
   aws:
-    accesskey:
-    secretkey:
+    accessKeyId:
+    secretKey:
 
 kafka-dynamodb-app:
   topic-name:

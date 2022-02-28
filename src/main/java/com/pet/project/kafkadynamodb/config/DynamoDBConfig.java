@@ -24,11 +24,10 @@ public class DynamoDBConfig {
     @Value("${amazon.dynamodb.region}")
     private String signingRegion;
 
-
-    @Value("${amazon.aws.accesskey}")
+    @Value("${amazon.aws.accessKeyId}")
     private String amazonAWSAccessKey;
 
-    @Value("${amazon.aws.secretkey}")
+    @Value("${amazon.aws.secretKey}")
     private String amazonAWSSecretKey;
 
     @Bean
